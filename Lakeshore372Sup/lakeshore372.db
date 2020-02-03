@@ -121,6 +121,7 @@ record(ai, "$(P)RESISTANCE") {
   field(PREC, "6")
   
   info(archive, "VAL")
+  info(interest, "HIGH")
     
   field(SIML, "$(P)SIM")
   field(SIOL, "$(P)SIM:HEATER:RANGE:SP")
@@ -137,6 +138,7 @@ record(ai, "$(P)HEATER:POWER") {
   field(PREC, "3")
   
   info(archive, "VAL")
+  info(interest, "HIGH")
     
   field(SIML, "$(P)SIM")
   field(SIOL, "$(P)SIM:HEATER:POWER")
@@ -152,6 +154,7 @@ record(ai, "$(P)P") {
   field(PREC, "3")
   
   info(archive, "VAL")
+  info(interest, "HIGH")
     
   field(SIML, "$(P)SIM")
   field(SIOL, "$(P)SIM:P")
@@ -180,6 +183,7 @@ record(longin, "$(P)I") {
   field(EGU, "")
   
   info(archive, "VAL")
+  info(interest, "HIGH")
     
   field(SIML, "$(P)SIM")
   field(SIOL, "$(P)SIM:I")
@@ -207,6 +211,7 @@ record(longin, "$(P)D") {
   field(EGU, "")
   
   info(archive, "VAL")
+  info(interest, "HIGH")
     
   field(SIML, "$(P)SIM")
   field(SIOL, "$(P)SIM:D")
