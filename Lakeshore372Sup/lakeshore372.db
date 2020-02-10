@@ -124,7 +124,7 @@ record(ai, "$(P)RESISTANCE") {
   info(interest, "HIGH")
     
   field(SIML, "$(P)SIM")
-  field(SIOL, "$(P)SIM:HEATER:RANGE:SP")
+  field(SIOL, "$(P)SIM:HEATER:RESISTANCE")
   field(SDIS, "$(P)DISABLE")
 }
 
@@ -248,6 +248,7 @@ alias("$(P)SIM:TEMP", "$(P)SIM:TEMP:SP")
 alias("$(P)SIM:TEMP", "$(P)SIM:TEMP:SP:RBV")
 
 record(ao, "$(P)SIM:HEATER:POWER"){}
+record(ao, "$(P)SIM:HEATER:RESISTANCE"){}
 
 record(mbbo, "$(P)SIM:HEATER:RANGE"){}
 alias("$(P)SIM:HEATER:RANGE", "$(P)SIM:HEATER:RANGE:SP")
