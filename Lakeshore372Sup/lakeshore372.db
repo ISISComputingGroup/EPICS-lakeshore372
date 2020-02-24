@@ -175,7 +175,7 @@ record(ao, "$(P)P:SP") {
   field(SDIS, "$(P)DISABLE")
 }
 
-record(longin, "$(P)I") {
+record(ai, "$(P)I") {
   field(DESC, "PID - integral")
   field(INP, "@lakeshore372.proto getI $(PORT)")
   field(DTYP, "stream")
@@ -190,7 +190,7 @@ record(longin, "$(P)I") {
   field(SDIS, "$(P)DISABLE")
 }
 
-record(longout, "$(P)I:SP") {
+record(ao, "$(P)I:SP") {
   field(DESC, "PID - integral SP")
   field(OUT, "@lakeshore372.proto setI($(P)) $(PORT)")
   field(DTYP, "stream")
@@ -203,7 +203,7 @@ record(longout, "$(P)I:SP") {
   field(SDIS, "$(P)DISABLE")
 }
 
-record(longin, "$(P)D") {
+record(ai, "$(P)D") {
   field(DESC, "PID - derivative")
   field(INP, "@lakeshore372.proto getD $(PORT)")
   field(DTYP, "stream")
@@ -218,7 +218,7 @@ record(longin, "$(P)D") {
   field(SDIS, "$(P)DISABLE")
 }
 
-record(longout, "$(P)D:SP") {
+record(ao, "$(P)D:SP") {
   field(DESC, "PID - derivative SP")
   field(OUT, "@lakeshore372.proto setD($(P)) $(PORT)")
   field(DTYP, "stream")
