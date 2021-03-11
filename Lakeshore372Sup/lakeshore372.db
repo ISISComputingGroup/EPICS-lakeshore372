@@ -93,7 +93,7 @@ record(mbbo, "$(P)HEATER:RANGE:SP") {
   field(DESC, "Heater range setpoint")
   field(OUT, "@lakeshore372.proto setHtrRange $(PORT)")
   field(DTYP, "stream")
-  field(SCAN, "1 second")
+  field(SCAN, "Passive")
   
   field(ZRST, "Off")
   field(ONST, "31.6 uA")
